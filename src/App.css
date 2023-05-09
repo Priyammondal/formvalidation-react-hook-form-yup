@@ -1,0 +1,62 @@
+.form-check {
+  position: relative;
+}
+button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input.input-error,
+select.input-error {
+  border-color: rgb(223, 53, 69);
+}
+.text-danger {
+  width: 100vw;
+}
+
+@media screen and (max-width: 576px) {
+  .container > div {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container > div > div > input,
+  #jobtitle {
+    width: 94vw !important;
+  }
+  .container > div:last-child {
+    position: relative;
+  }
+  .container > div:last-child > button {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container > div {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container > div {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container > div {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .container > div {
+    width: 70%;
+  }
+}
